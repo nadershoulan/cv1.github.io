@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Languative demo</title>
+    <!--<script src="https://raw.github.com/Novotive/Languative/master/languative.js"></script>-->
+    <script src="languative.js"></script>
+    <script src="/js/translate.js"></script>
+
+    <!-- <script>
+        // "html" is default dictinary loaded from html code
+        // in this example "html" language equals to english.
+        // If there is no active language dictionary then "html"
+        // language will be used
+
+        languative.modifyDictionary("html", {
+            githubLink: "Fork me on GitHub"
+        });
+
+        // You dont have to modify "en" dictionary - it is loaded directly from html code.
+        // Thre is only "pl" and "de" dictionary. All other languages will use default "html" dictionary
+
+        languative.modifyDictionary("pl", {
+            welcomeMessage: "Witaj na stronie testowej Languative",
+            selectLanguage: "Możesz wybrać język przez kliknięcie linków poniżej",
+            english: "Angielski (English)",
+            polish: "Polski",
+            german: "Niemiecki"
+                //undefined: "Przykład nieprzypisanej frazy"
+        });
+        languative.modifyDictionary("ar", {
+            welcomeMessage: "السلام عليكم رحمة اللة وبركاتة",
+            selectLanguage: "ىشيثق",
+            english: "Englisch (English)",
+            polish: "Polnisch",
+            german: "Deutsch"
+                //undefined: "Przykład nieprzypisanej frazy"
+        });
+
+        function loadHtmlDictionary() {
+            document.getElementById("htmlDictionary").innerText = JSON.stringify(languative.dictonaries.html, null, "  ");
+        }
+
+        function loadActiveDictionary() {
+            document.getElementById("activeDictionary").innerText = JSON.stringify(languative.getDictionaryFromHtml(), null, "  ");
+        }
+    </script> -->
+</head>
+
+<body>
+    <h1>Languative demo</h1>
+    <p><strong data-phrase-id="welcomeMessage">Welcome on languative demo page</strong></p>
+    <p data-phrase-id="selectLanguage">You can change language by clicking links below</p>
+    <p data-phrase-id="Language">this is me</p>
+    <ul>
+        <li><a href="#" onclick="languative.changeLanguage('en');" data-phrase-id="english">English</a></li>
+        <li><a href="#" onclick="languative.changeLanguage('pl')" data-phrase-id="polish">Polish</a></li>
+        <li><a href="#" onclick="languative.changeLanguage('ar')" data-phrase-id="german">German</a></li>
+    </ul>
+
+    <hr />
+
+
+    <a href="#" onclick="loadHtmlDictionary()">Load 'html' dictionary</a>
+    <pre id="htmlDictionary">...</pre>
+
+    <a href="#" onclick="loadActiveDictionary()">Load page dictionary</a> (it will change as You change active language)
+    <pre id="activeDictionary">...</pre>
+</body>
+
+</html>
