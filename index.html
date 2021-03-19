@@ -25,10 +25,28 @@ License URL: https://creativecommons.org/licenses/by/4.0/
     <link href="css/devicons/css/devicons.min.css" rel="stylesheet">
     <link href="css/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <!-- new -->
+
+    <link rel="stylesheet" href="/css/slide_btn.css">
+    <link rel="stylesheet" href="/css/demo3.css">
+
+
 </head>
 
 <body id="page-top">
 
+
+    <!-- start preloader  -->
+    <div class="color-plate ">
+        <a class="icon" id="A_2"><i class="fa fa-cog fa-spin" ></i></a>
+        <h5 data-phrase-id="Language">اللغة :</h5>
+        <hr>
+        <div class="color-head">
+            <li><a class="ar" onclick="languative.changeLanguage('ar')" data-phrase-id="arabic">Arabic</a></li>
+            <li><a class="en" onclick="languative.changeLanguage('en')" data-phrase-id="English">English</a></li>
+        </div>
+    </div>
+    <!-- end preloader -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">
             <span class="d-block d-lg-none  mx-0 px-0"><img src="img/logo-white.png" alt="" class="img-fluid"></span>
@@ -65,25 +83,22 @@ License URL: https://creativecommons.org/licenses/by/4.0/
 
     <div class="container-fluid p-0">
 
-        <ul>
-            <li><a href="#" onclick="languative.changeLanguage('en');" data-phrase-id="english">English</a></li>
-            <li><a href="#" onclick="languative.changeLanguage('ar')" data-phrase-id="arabic">عربي</a></li>
-        </ul>
+
         <!--====================================================
                         ABOUT
     ======================================================-->
         <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
             <div class="my-auto">
-                <img src="img/a.png" class="img-fluid mb-3" alt="">
-                <h1 class="mb-0">
-                    <span class="text-primary" data-phrase-id="Programmer">Programmer</span>
-                </h1>
+                <img src="img/a_V2.png" class="img-fluid mb-3" alt="">
+                <h2 class="mb-0">
+                    <span class="text-primary input" data-phrase-id="Programmer">Programmer</span>
+                </h2>
                 <div class="subheading mb-5">
                     <p data-phrase-id="Language_detail">
                         I have more then 3 years of experience in web Development</p>
                     <a href="https://sulfoodblog.000webhostapp.com/login/admin" data-phrase-id="ex">demo</a>
                 </div>
-                <p class="mb-5" style="max-width: 500px;" data-phrase-id="Language_detail1">I have experience in laravel framework as well as bootstrap frameworks , css , html , sass , and javascript . </p>
+                <p class="mb-5 input" style="max-width: 500px;" data-phrase-id="Language_detail1">I have experience in laravel framework as well as bootstrap frameworks , css , html , sass , and javascript . </p>
                 <ul class="list-inline list-social-icons mb-0">
                     <li class="list-inline-item">
                         <a href="https://www.facebook.com/alhadthalyamani">
@@ -145,8 +160,8 @@ License URL: https://creativecommons.org/licenses/by/4.0/
                 <div class="resume-item col-md-6 col-sm-12">
                     <div class="card mx-0 p-4 mb-5" style="border-color: #ffc107; box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.21);">
                         <div class="resume-content mr-auto">
-                            <h4 class="mb-3"><i class="fa fa-laptop mr-3 text-warning"></i> Web full Stack </h4>
-                            <p data-phrase-id="Web_full_Stack"> I have worked as a full stack developer using PHP , laravel framework for PHP , css , sass,bootstrap , java script , Mysql </p>
+                            <h4 class="mb-3 input"><i class="fa fa-laptop mr-3 text-warning"></i> Web full Stack </h4>
+                            <p data-phrase-id="Web_full_Stack" class="input"> I have worked as a full stack developer using PHP , laravel framework for PHP , css , sass,bootstrap , java script , Mysql </p>
                         </div>
                         <div class="resume-date text-md-right">
                             <span class="text-primary" data-phrase-id="Web_full_Stack_date"> December 2018 - Present </span>
@@ -167,7 +182,7 @@ License URL: https://creativecommons.org/licenses/by/4.0/
                     </div>
                 </div> -->
             </div>
-            <p data-phrase-id="detail1">
+            <p data-phrase-id="detail1" class="input">
                 i also have some experience in Photoshop , Illustrator , and adobe XD .
             </p>
         </section>
@@ -329,7 +344,7 @@ License URL: https://creativecommons.org/licenses/by/4.0/
         <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="awards">
             <div class="row my-auto">
                 <div class="col-12">
-                    <h2 class="  text-center">STADIES</h2>
+                    <h2 class="  text-center" data-phrase-id="studied">studied</h2>
                     <div class="mb-5 heading-border"></div>
                 </div>
                 <div class="main-award" id="award-box">
@@ -348,7 +363,7 @@ License URL: https://creativecommons.org/licenses/by/4.0/
                         <div class="award-content">
                             <span class="date">Apr 2017 - Mar 2019</span>
                             <h5 class="title">Graphics Design</h5>
-                            <p class="description" data-phrase-id="Graphics_detail">
+                            <p class="description input" data-phrase-id="Graphics_detail">
                                 I have worked with some adobe program like photoshop , Illustrator ,adobe XD
                             </p>
                         </div>
@@ -363,7 +378,7 @@ License URL: https://creativecommons.org/licenses/by/4.0/
         <section class="resume-section p-3 p-lg-5 d-flex flex-column">
             <div class="row my-auto" id="contact">
                 <div class="col-md-8">
-                    <div class="contact-cont">
+                    <div class="contact-cont" class="input">
                         <h3 data-phrase-id="contect_us">CONTACT Us</h3>
                         <div class="heading-border-light"></div>
                         <p data-phrase-id="contect_detail">You can contect me using this form , please be sure you have a good internat conection </p>
@@ -930,6 +945,28 @@ License URL: https://creativecommons.org/licenses/by/4.0/
 
         });
     </script>
+    <!-- Change the language slide -->
+    <script>
+        $('.color-plate .icon').on("click", function() {
+            $('.color-plate').toggleClass('active');
+        });
+    </script>
+    <!-- language -->
+    <script>
+        $('.color-head .ar').on("click", function() {
+            $('head')
+                .append(" <link rel=\"stylesheet\" href=\"css/rtlStyle.css\">");
+
+        });
+    </script>
+    <script>
+        $('.color-head .en').on("click", function() {
+            $('head')
+                .append(" <link rel=\"stylesheet\" href=\"css/ltr.css\">");
+
+        });
+    </script>
+    <!-- end of language -->
 </body>
 
 </html>

@@ -17,7 +17,7 @@ languative.modifyDictionary("en", {
 
 });
 languative.modifyDictionary("ar", {
-    About: " عنى",
+    About: " عني",
     Skills: "المهارات",
     studied: "درسة في",
     selectLanguage: "Możesz wybrać język przez kliknięcie linków poniżej",
@@ -34,13 +34,13 @@ languative.modifyDictionary("ar", {
     Web_Developer_date: " مارس 2019  _الان",
     Web_full_Stack: " لقد عملة كمطور في الويب بإستخدام PHP , laravel framework for PHP , css , sass,bootstrap , java script , Mysql  ",
     Web_full_Stack_date: " ديسمبر 2018  _ الان ",
-    detail1: " لدي ايضاً بعض الخبرة في in Photoshop , Illustrator , and adobe XD . ",
+    detail1: " لدي ايضاً بعض الخبرة في  Photoshop , Illustrator , and adobe XD . ",
     PROGRAMMING_detail: "  لقد درسة البرمجة في جامعة تعز ,,, اليمن   ",
     Graphics_detail: "لقد استخدمة مع بعض البرامج مثل photoshop , Illustrator ,adobe XD   ",
     contect_us: "تواصل معنا ",
     contect_detail: " يمكنك التوصال معي باستخدام هذة الاستمارة وتاكد من ان لديك اتصال جيد في الانترنت  ",
     area1: " السلخانة ",
-    area2: " تعز , اليمن ",
+    area2: " تعز  اليمن ",
 
 
 

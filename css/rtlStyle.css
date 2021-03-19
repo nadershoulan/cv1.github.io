@@ -1,0 +1,17 @@
+.input {
+    flex-direction: row-reverse;
+}
+
+.input {
+    float: right;
+    text-align: right !important;
+}
+
+header .head-h .text-right {
+    float: left;
+    text-align: left !important;
+}
+
+.input {
+    direction: rtl;
+}
