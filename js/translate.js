@@ -55,3 +55,4 @@ function loadHtmlDictionary() {
 function loadActiveDictionary() {
     document.getElementById("activeDictionary").innerText = JSON.stringify(languative.getDictionaryFromHtml(), null, "  ");
 }
+
