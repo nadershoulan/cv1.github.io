@@ -420,25 +420,34 @@ License URL: https://creativecommons.org/licenses/by/4.0/
         <section class="resume-section p-3 p-lg-5 d-flex flex-column">
             <div class="row my-auto" id="contact">
                 <div class="col-md-8">
-                    <div class="contact-cont" class="input">
-                        <h3 data-phrase-id="contect_us">CONTACT Us</h3>
-                        <div class="heading-border-light"></div>
-                        <p data-phrase-id="contect_detail">You can contect me using this form , please be sure you have a good internat conection </p>
-                    </div>
-                    <div class="row con-form">
-                        <div class="col-md-12">
-                            <input type="text" name="full-name" placeholder="Full Name" class="form-control">
+                    <form name="gform" id="gform" enctype="text/plain" action="https://docs.google.com/forms/d/e/1FAIpQLScFjuMmuB55SWRzA0nQhXC_Ya7MGbOLtpsHCfzyS64z6GjFpA/formResponse?" target="hidden_iframe" onsubmit="submitted=true;">
+
+                        <div class="contact-cont" class="input">
+                            <h3 data-phrase-id="contect_us">CONTACT Us</h3>
+                            <div class="heading-border-light"></div>
+                            <p data-phrase-id="contect_detail">You can contect me using this form , please be sure you have a good internat conection </p>
                         </div>
-                        <div class="col-md-12">
-                            <input type="text" name="email" placeholder="Email Id" class="form-control">
+
+                        <div class="row con-form">
+                            <div class="col-md-12">
+                                <input type="text" placeholder="Full Name" name="entry.1059518040" id="entry.1059518040" class="form-control">
+                            </div>
+                            <div class="col-md-12">
+                                <input type="email" placeholder="Email Address" name="entry.1565482496" id="entry.1565482496" class="form-control">
+                            </div>
+                            <div class="col-md-12">
+                                <input type="text" placeholder="Subject" name="entry.970604985" id="entry.970604985" class="form-control">
+                            </div>
+                            <div class="col-md-12"><textarea name="entry.38419595" id="entry.38419595" placeholder="Message Details"></textarea></div>
+                            <div class="col-md-12 sub-but">
+                                <input type="submit" value="Send" class="btn btn-general btn-white" style="font-family: Cairo, sans-serif;color:black" role="button">
+                            </div>
                         </div>
-                        <div class="col-md-12">
-                            <input type="text" name="subject" placeholder="Subject" class="form-control">
-                        </div>
-                        <div class="col-md-12"><textarea name="" id=""></textarea></div>
-                        <div class="col-md-12 sub-but"><button class="btn btn-general btn-white" role="button">Send</button></div>
-                    </div>
+                    </form>
                 </div>
+                <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {}"></iframe>
+
+
                 <div class="col-md-4 col-sm-12 mt-5">
                     <div class="contact-cont2">
                         <div class="contact-add contact-box-desc">
@@ -1024,6 +1033,16 @@ License URL: https://creativecommons.org/licenses/by/4.0/
             $('head')
                 .append(" <link rel=\"stylesheet\" href=\"css/ltr.css\">");
 
+        });
+    </script>
+    <script type="text/javascript">
+        var submitted = false;
+    </script>
+    <script src="js/jquery/jquery.min.js"></script>
+    <script type="text/javascript">
+        $('#gform').on('submit', function(e) {
+            $('#gform *').fadeOut(2000);
+            $('#gform').prepend('Your submission has been Send Successfully.');
         });
     </script>
     <!-- end of language -->
